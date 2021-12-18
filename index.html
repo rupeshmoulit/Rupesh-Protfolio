@@ -1,38 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RUPESH-PORTFOLIO</title>
     <style>
-        h1
-        {
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        h1 {
             background-color: #666;
-            color:white;
+            color: white;
             text-align: center;
             padding: 20px;
         }
-        footer
-        {
+
+        footer {
             background-color: #666;
-            color:white;
-            text-align: center;
+            color: white;
             padding: 20px;
+            text-decoration: none;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
         }
     </style>
 </head>
+
 <body>
     <h1>
         PASSIONATE ABOUT LEARNING NEW SKILL
     </h1>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Experiance</a></li>
+                <li><a href="#">Education</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1>About Me</h1>
+            <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a
+                metropolitan area of over 13 million inhabitants.</p>
+            <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going
+                back to its founding by the Romans, who named it Londinium.</p>
+        </article>
+    </section>
     <footer>
         <p>Follow me on:</p>
-        <ul>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">LinkedIn</a></li>
-        </ul>
+        <a href="">Facebook</a>
+        <a href="">Instagram</a>
+        <a href="">LinkedIn</a>
     </footer>
 </body>
+
 </html>
